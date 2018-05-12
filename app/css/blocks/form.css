@@ -1,0 +1,245 @@
+.form {
+  background-color: #fff; }
+
+.form__title {
+  font-size: 40px;
+  line-height: 30px;
+  color: #000;
+  text-align: center; }
+
+.form__field-title {
+  font-size: 30px;
+  line-height: 30px;
+  color: #000; }
+
+.form__field-list--beard, .form__field-list--offers {
+  list-style: none; }
+
+.form__field-item {
+  font-size: 24px;
+  line-height: 24px;
+  color: #000; }
+
+.form__wrapper {
+  width: 320px;
+  margin: 0 auto; }
+
+.form__return {
+  display: none; }
+
+.form__field--fullname {
+  margin-top: 30px; }
+
+.form__field--fullname #name {
+  font-size: 18px;
+  line-height: 30px;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 7px; }
+
+.form__field--fullname #surname {
+  font-size: 18px;
+  line-height: 30px;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 7px; }
+
+.form__field--fullname #patronymic {
+  font-size: 18px;
+  line-height: 30px;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 7px; }
+
+.form__field--contacts {
+  margin-top: 32px; }
+
+.form__field--contacts #phone {
+  font-size: 18px;
+  line-height: 30px;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 7px; }
+
+.form__field--contacts #email {
+  font-size: 18px;
+  line-height: 30px;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 7px; }
+
+.form__field--comment {
+  margin-top: 32px; }
+
+.form__field--comment textarea {
+  width: 280px;
+  height: 112px; }
+
+.form__field--comment textarea[placeholder] {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000; }
+
+.form__field-list--beard {
+  width: 320px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.form__field-list--beard .form__field-item {
+  width: 87px;
+  height: 180px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.form__apply {
+  width: 320px;
+  height: 50px;
+  font-size: 18px;
+  line-height: 30px;
+  border: 0;
+  color: #fff;
+  background-color: #a0522d; }
+
+@media (min-width: 768px) {
+  .form__wrapper {
+    width: 640px;
+    margin: 0 auto; }
+  .form__return {
+    display: block;
+    margin-left: 200px;
+    margin-top: 20px; }
+  .form__header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+  .form__field--fullname {
+    width: 640px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .form__field--fullname #name {
+    width: 213px; }
+  .form__field--fullname #surname {
+    width: 213px; }
+  .form__field--fullname #patronymic {
+    width: 213px; }
+  .form__field--contacts #phone {
+    width: 640px;
+    margin-bottom: 35px; }
+  .form__field--contacts #email {
+    width: 640px;
+    margin-bottom: 35px; }
+  .form__field--comment textarea {
+    width: 640px;
+    height: 212px; }
+  .form__field-list--beard {
+    width: 640px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .form__field-list--offers {
+    width: 640px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .form__field-list--offers .form__field-item {
+    width: 260px;
+    height: 60px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .form__apply {
+    width: 640px; } }
+
+@media (min-width: 1200px) {
+  .form__wrapper {
+    width: 960px;
+    margin: 0 auto; }
+  .form__return {
+    display: block;
+    margin-left: 510px;
+    margin-top: 20px; }
+  .form__field-title {
+    text-align: center; }
+  .form__field--fullname {
+    width: 960px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .form__field--fullname #name {
+    width: 295px; }
+  .form__field--fullname #surname {
+    width: 295px; }
+  .form__field--fullname #patronymic {
+    width: 295px; }
+  .form__field--contacts {
+    width: 960px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .form__field--contacts #phone {
+    width: 462px; }
+  .form__field--contacts #email {
+    width: 462px; }
+  .form__field--comment textarea {
+    width: 960px;
+    height: 212px; }
+  .form__field-list--beard {
+    width: 960px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .form__field-list--offers {
+    width: 960px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .form__field-list--offers .form__field-item {
+    width: 260px;
+    height: 60px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .form__apply {
+    width: 960px; } }

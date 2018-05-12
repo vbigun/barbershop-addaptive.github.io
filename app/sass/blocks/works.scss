@@ -1,0 +1,131 @@
+.works {
+	background-color: #fff;
+}
+.works_return {
+	display: none;
+}
+.works__title {
+	font-size: 40px;
+	line-height: 30px;
+	color: #000;
+	text-align: center;
+}
+.works__list {
+	list-style: none;
+}
+.works-item__title {
+	font-size: 24px;
+	line-height: 27px;
+	color: #000;
+}
+.works-item__text {
+	display: block;
+	font-size: 18px;
+	line-height: 27px;
+	color: #000;
+	text-align: left;
+
+}
+.works-item__parameter-list {
+	list-style: none;
+}
+.works-item__parameter-item {
+	font-size: 16px;
+	line-height: 27px;
+	color: #000;
+}
+.works__wrapper {
+	width: 320px;
+	margin: 0 auto;
+}
+.works-item__parameter-list {
+	width: 320px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.works-item__parameter-item{
+	width: 115px;
+	height: 50px;
+}
+.works-item__parameter-item--mustache {
+	margin-right: 30px;
+}
+.works-item {
+	margin-top: 20px;
+	border: 0.5px solid gray;
+}
+@media (min-width: 768px) {
+	.works__wrapper {
+		width: 640px;
+		margin: 0 auto;
+	}
+	.works__header {
+		width: 640px;
+		display: flex;
+		justify-content: space-around;
+	}
+	.works_return {
+		display: block;
+	}
+	.works-item {
+		width: 640px;
+		height: 294px;
+		display: flex;
+	}
+	.works-item .works-item__parameter-list {
+		margin-top: 80px;
+	}
+	.works-item--work-of-month {
+		width: 640px;
+		margin: 0 auto;
+		display: flex;
+	}
+	.works-item--work-of-month {
+		height: 480px;
+		width: 640px;
+	}
+
+	.works-item--work-of-month .works-item__parameter-list {
+		margin-top: 200px;
+	}
+
+}
+@media (min-width: 1200px) {
+	.works__wrapper {
+		width: 960px;
+		margin: 0 auto;
+	}
+	.works__header {
+		width: 960px;
+		display: flex;
+		justify-content: space-around;
+	}
+	.works-item {
+		width: 293px;
+		height: 540px;
+		flex-direction: column;
+
+	}
+	.works-item--work-of-month {
+		width: 960px;
+		margin: 0 auto;
+		flex-direction: row;
+	}
+	.works__list {
+		width: 960px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.works-item__parameter-list {
+		width: 400px;
+		display: flex;
+	}
+	.works_return {
+		margin-left: 450px;
+		margin-top: 20px;
+	}
+	
+}

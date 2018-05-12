@@ -1,0 +1,93 @@
+.site-list__item {
+  list-style: none; }
+
+.site-list a {
+  display: block;
+  padding: 12px 21px;
+  padding-bottom: 13px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #826550;
+  border-top: 1px solid #886e5b;
+  border-bottom: 1px solid #71543f; }
+
+.site-list a[href]:hover {
+  background-color: #755a46;
+  border-top-color: #755a46; }
+
+.site-list a[href]:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #6a4d38;
+  border-top-color: #6a4d38; }
+
+.site-list__item a {
+  color: #fff;
+  text-decoration: none; }
+
+.site-list {
+  font-weight: bold;
+  /*min-height: 50px;*/ }
+
+@media (min-width: 768px) {
+  .site-list {
+    width: 570px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .site-list__item {
+    margin-right: 32px; }
+    .site-list__item:last-child {
+      margin-right: 0; }
+    .site-list__item .site-list__item--active {
+      position: relative; }
+      .site-list__item .site-list__item--active::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -3px;
+        left: 0;
+        height: 3px;
+        background: #826550; }
+  .site-list__item a {
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 23px;
+    background: none;
+    border: none; }
+  .site-list__item a[href]:hover {
+    color: #826550;
+    background-color: #000; }
+  .site-list__item a[href]:active {
+    color: #fff;
+    background-color: #000;
+    opacity: 0.3; } }
+
+@media (min-width: 1200px) {
+  .site-list {
+    width: 780px; }
+  .site-list__item {
+    margin: 0; }
+    .site-list__item .site-list__item--active::after {
+      right: 30px;
+      left: 30px; }
+  .site-list__item a {
+    padding-right: 31px;
+    padding-left: 31px; }
+  .site-list__item a[href]:hover {
+    color: #000;
+    background-color: #fff; }
+  .site-list__item a[href]:active {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    opacity: 1; } }

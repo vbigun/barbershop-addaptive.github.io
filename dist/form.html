@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Форма для Барбершопа</title>
+</head>
+<body>
+	<header class="page-header">
+		<a class="page-header__logo" href="index.html">
+			<img class="page-header__logo-image" src="img/logo-mobile.jpg" width="300" height="30" alt="Логотип Барбершопа">
+		</a>
+		<nav class="main-nav">
+			<button class="main-nav__toogle" type="button">Открыть меню</button>
+			<div class="main-nav__wrapper">
+				<ul class="main-nav__list site-list">
+					<li class="site-list__item site-list__item--active"><a href="index.html">Главная</a></li>
+					<li class="site-list__item"><a href="photo.html">Наши работы</a></li>
+					<li class="site-list__item"><a href="form.html">Записаться</a></li>
+					<li class="site-list__item"><a href="contacts.html">Контакты</a></li>
+					<li class="site-list__item"><a href="htmlacademy.ru">HTML Academy</a></li>
+				</ul>
+				<ul class="main-nav__list user-list">
+					<li class="user-list__item"><a class="user-list__login" href="login.html">Войти</a></li>
+				</ul>
+			</div>
+		</nav>	
+	</header>
+
+	<main class="page-main">
+		<section class="form">
+			<div class="form__wrapper">
+				<h2 class="form__title">Запись на стрижку</h2>
+				<a class="button form__return form__return--show" href="index.html">На главную</a>
+				<form class="form__inner" method="POST" action="htmlacademy.ru">
+					<div class="form__field form__field--fullname">
+						<h3 class="visually-hidden">Ф.И.О</h3>
+						<label for="name"><input id="name" type="text" name="name" placeholder="Имя"></label>
+						<label for="surname"><input id="surname" type="text" name="surname" placeholder="Фамилия"></label>
+						<label for="patronymic"><input id="patronymic" type="text" name="patronymic" placeholder="Отчество"></label>
+					</div>
+
+					<div class="form__field form__field--contacts">
+						<h3 class="visually-hidden">Ваши контакты</h3>
+						<label for="phone"><input id="phone" type="text" name="phone" placeholder="Контактый телефон"></label>
+						<label for="email"><input id="email" type="text" name="email" placeholder="Контактый e-mail"></label>
+					</div>
+
+					<div class="form__field form__field--comment">
+						<h3 class="visually-hidden">Ваш коментарий</h3>
+						<textarea name="comment" placeholder="Доп. информация для мастера"></textarea>
+					</div>
+
+					<div class="form__field form__field--beard">
+						<h3 class="form__field-title">Выберите модель бороды</h3>
+						<ul class="form__field-list">
+							<li class="form__field-item">
+								<input type="radio" name="beard" value="beard-1" id="beard-1" checked>
+								<label for="beard-1">адмирал</label>
+								<img src="img/beard-1.svg" alt="Тип бороды Адмирал">
+							</li>
+
+							<li class="form__field-item">
+								<input type="radio" name="beard" value="beard-2" id="beard-2">
+								<label for="beard-2">лесоруб</label>
+								<img src="img/beard-2.svg" alt="Тип бороды Лесоруб">
+							</li>
+
+							<li class="form__field-item">
+								<input type="radio" name="beard" value="beard-3" id="beard-3">
+								<label for="beard-3">полярник</label>
+								<img src="img/beard-3.svg" alt="Тип бороды Полярник">
+							</li>
+
+							<li class="form__field-item">
+								<input type="radio" name="beard" value="beard-4" id="beard-4">
+								<label for="beard-4">боярник</label>
+								<img src="img/beard-4.svg" alt="Тип бороды Боярник">
+							</li>
+
+							<li class="form__field-item">
+								<input type="radio" name="beard" value="beard-5" id="beard-5">
+								<label for="beard-5">мудрец</label>
+								<img src="img/beard-5.svg" alt="Тип бород Мудрец">
+							</li>
+						</ul>
+					</div>
+
+					<div class="form__field form__field--offers">
+						<h3 class="form__field-title">Дополнительные услуги:</h3>
+						<ul>
+							<li>
+								<input type="checkbox" name="offer-1" id="offer-1" checked>
+								<label for="offer-1">Подкрасить бороду</label>
+							</li>
+
+							<li>
+								<input type="checkbox" name="offer-2" id="offer-2" checked>
+								<label for="offer-2">Причесать бороду</label>
+							</li>
+
+							<li>
+								<input type="checkbox" name="offer-3" id="offer-3">
+								<label for="offer-3">Убрать седину</label>
+							</li>
+
+							<li>
+								<input type="checkbox" name="offer-4" id="offer-4">
+								<label for="offer-4">Накрутить усы</label>
+							</li>
+
+							<li>
+								<input type="checkbox" name="offer-5" id="offer-5">
+								<label for="offer-5">Подровнять виски</label>
+							</li>
+
+							<li>
+								<input type="checkbox" name="offer-6" id="offer-6">
+								<label for="offer-6">Отполировать лысину</label>
+							</li>
+						</ul>
+					</div>
+
+					<button class="form__apply" type="button">Отправить заявку</button>
+				</form>
+			</div>
+		</section> 
+	</main>
+
+	<footer class="page-footer">
+		<div class="page-footer__wrapper">
+			<div class="page-footer__contacts contacts">
+				<b class="contacts__title">Барбершоп Бородинский</b>
+				<p class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная 19/8 <br>
+					<a class="contacts__phone" href="tel: +78125556666">
+						<span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66
+					</a>
+				</p>
+			</div>
+
+			<div class="page-footer__social social">
+				<b class="social__title">Давайте дружить!</b>
+				<ul class="social__list">
+					<li class="social__item">
+						<a class="social__link social__link--vkontakte" href="vk.com">Мы ВКонтакте</a>
+					</li>
+					
+					<li class="social__item">
+						<a class="social__link social__link--facebook" href="facebool.com">Мы в Фейсбуке</a>
+					</li>
+
+					<li class="social__item">
+						<a class="social__link social__link--instagram" href="instagram.com">Мы в Инстаграм</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="page-footer__copyright copyright">
+				<b class="copyright__title">Разработано:</b>
+				<a class="button copyright__button" href="htmlacademy.ru">HTML Academy</a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
